@@ -7,14 +7,92 @@ sending info from one computer to another: hosts, links - 25
 what happens when you ask your phone to view a website - 27
 	request, web request http - 27
 	domain vs IP address, DNS server,  name resolution - 28
+	DNS heirarchy, local DNS servers, open resolvers - 29
+	Data transport TCP - 33
+	NAT network address translation - 37
+	global network addressing - 38
+	network routing - 39
+	DNS has to go up the entire layer before it can say "not found" - 42
+	link management - 44
+
+lecture ends early - 45
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 8 thursday wvwvwvwvwvwvwvwwvwvwvwvw
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
 
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 13 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+previous lecture recap - 5
 
+Layering - 9
+	layers rely on layers below and export services to the layer above- 10
+			*mic out* - 10
+			*mic in* - 12
+	protocol - 13
+	end-to-end argument saltzer84 - 14
+		ARPAnet - 17
+		reliable transmission isnt enough - 20
+
+TCP/IP protocol stack: Application layer, transport layer, network layer, link layer - 25
+	hourglass model - 27
+	IP is the thin waist - 30
+		pros and cons of the narrow waist - 36
+			MIT and Amazon deal - 37
+
+header - 38
+
+Phyiscal layer, Layer 1, encoding binary data into signals - 42
+Data link layer, layer 2, framing, breaking streams of bits into chunks - 46
+	"packets and frames are the same thing just different names" - 46
+	multiplexing - 51
+	error handling - 53
+	inside of a Frame: header, payload, trailer - 55
+	MTU maximum transmission unit - 57
+
+	"where should a frame start and end", identifying where frames start and end - 1.00
+		methods: fixed length frames, length based frames, sentinel based frames, fixed duration frames - 1.04
+		fixed lenth frames - 1.05
+		length based frames - 1.08
+		sentinel based frames - 1.12
+			stuffing - 1.13
+			bit stuffing example - 1.16
+			sentinels for error checking - 1.20
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 13 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 15 thursday wvwvwvwvwvwvwvwwvwvwvwvw
+67 hands - 4
+
+where frames should start and end, continued - 9
+	bit stuffing example recap - 4
+	byte stuffing - 9
+	clock signal based frames - 10
+		SONET - 12
+
+transport layer, layer 3, reliable transmission of packets - 13
+	two options to ensure reliability, detect data corruption & resend or send redudant data no matter what - 15
+	ARQ automatic repeat request - 16
+		data corruption can happen to an acknowledgment as well! - 19
+			solving it with sequence numbers - 21
+		"but, sending one frame at a time has lousy performance..." - 25
+			BDP bandwidth delay product - 27
+		Pipelined transmission, sending multiple packets at a time - 32
+			Go-Back-N protocol - 38
+			sliding window protocol - 43
+				sender window - 49
+				receiver window - 55
+						*mic out* - 59
+						*mic in* - 1.02
+			deciding when to retrasmit, how long should a timeout be? - 1.03
+				link latency, RTT round trip time - 1.04
+			can we shortcut the timeout? - 1.10
+			fast retrasmit - 1.17
+
+we have a quiz on thusday and it covers everything up to today - 1.19
+		
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 15 thursday wvwvwvwvwvwvwvwwvwvwvwv
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
@@ -22,11 +100,20 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwvw
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwv
 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
 
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwvw
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwv
