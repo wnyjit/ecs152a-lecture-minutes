@@ -97,6 +97,102 @@ wvwvwvwvwvwvwvwwvwvwvwvw 1 - 15 thursday wvwvwvwvwvwvwvwwvwvwvwv
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
 
+https://ucdavis.zoom.us/rec/play/mIa8jWi7JwnyH4civWXMQU-Swu25qNFWI2DUk27UzTYkClTPJnC9JUIQdzybDLtXEcKF76ZCW8fQQX4g.WYQehFrIP25iIv1p
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 20 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+congestion, sending the right amount - 30
+	highway example - 33
+	bandwidth allocation - 35
+	fair allocation - 38
+		Net Neutrality - 41
+				"I actually have a paper on congestion" - 43
+				
+	congestion occurs at routers - 43
+		goodput vs throughput - 46
+		
+	drop-tail queuing probleming - 48
+		latency increases when throughput increases - 49
+		
+		congestion collapse, "everybody is retrasmitting" - 54
+		
+		bottleneck link - 56
+		
+	mitigation - 58
+		increase network resources - 58
+		reduce network load - 1.02
+			open loop, closed loop - 1.04
+			network based, host based - 1.05
+			
+		proactive, reactive, congestion control, congestion avoidance, knee, cliff - 1.11
+		
+	discussion activity: how to detect congestion, limit sending rate, determine speed to send - 1.15
+	
+congestion detection - 1.20
+	explicit congestion signaling, ICMP, DECBit, ECN - 1.20
+	implicit congestion signaling, packet loss, packet delay - 1.21
+	
+throttling options - 1.29
+	sender window-based - 1.29
+		traffic bursts - 1.30
+	rate based - 1.31
+	
+choosing a send rate - 1.33
+	TCP probing approach - 1.36
+	
+basic TCP algorithm, window based congestion control - 1.40
+	congestion control, flow control - 1.40 
+	
+quiz #1 - 1.44
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 20 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 22 thursday wvwvwvwvwvwvwvwwvwvwvwvw
+watch everyone take the quiz :) - 0
+
+basic TCP algorithm, window based congestion control - 33
+	rwin, cwnd - 34
+	AIMD, additive increase multiplicative decrease - 38
+		intuition & equation - 39
+		
+	TCP bandwidth probing - 42
+		slow start, TCP reno - 44
+			example - 47
+			
+	fast retransmit and fast recovery - 56
+		why the sawtooth / why not stay? - 1.02
+		
+	discussion activity: "What is an application that requires short connection. is TCP good for it" - 1.06
+	
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 22 thursday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 27 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 27 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 29 thursday wvwvwvwvwvwvwvwwvwvwvwvw
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 29 thursday wvwvwvwvwvwvwvwwvwvwvwv
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwvw
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - x thursday wvwvwvwvwvwvwvwwvwvwvwv
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
+
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - x tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 
