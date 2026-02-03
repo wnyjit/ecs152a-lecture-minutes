@@ -170,13 +170,69 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
 
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 27 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
+	*mic out* - 4
+	*mic in* - 7
+talking about naming, port numbers - 7
+	how to pick a port number - 12
+	ephemeral ports - 13
+	
+UDP user datagram protocol - 15
+	UDP delivery - 17
+	UDP checksum - 20
+	discussion activity: applications that benefit from UDP - 25
+		why does DNS use UDP - 27
+		
+TCP transmission control protocol - 29
+	TCP header - 31
+		tcp flags, ACK SYN FIN URG PSH RST - 33
+		
+connection establishment - 37
+	two way handshake - 40
+		discussion activity: is the two way handshake enough? - 40
+		making it better - 46
+	three way handshake - 51
+	TCP state transitions - 55
+	connection teardown / hangup - 57
+
+TCP details, window probes, silly window syndrome, nagle's algo, PAWS - 1.06
+
+link layer - 1.08
+	hubs/repeaters - 1.08
+	discussion activity: advantages & disadvantages of hubs/repeaters - 1.10
+	one big shared bus - 1.15
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 27 tuesday wvwvwvwvwvwvwvwwvwvwvwvw
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
 
 wvwvwvwvwvwvwvwwvwvwvwvw 1 - 29 thursday wvwvwvwvwvwvwvwwvwvwvwvw
-wvwvwvwvwvwvwvwwvwvwvwvw 1 - 29 thursday wvwvwvwvwvwvwvwwvwvwvwv
+contunuing previous lecture - 7
+
+bridges - 11
+	selective forwarding - 18
+	
+switched ethernet - 19
+
+forwading table in bridges, how do bridges know where to forward, flooding - 26
+
+discussion activity: advantages of flooding - 35
+
+learning bridges - 38
+	the role of routers is to avoid collisions - 42
+	freeing up space in a learning bridge - 45
+			*sneeze.mp3* - 47
+	example - 48
+	recap / summary - 53
+	discussion activity: non-networking example of learning bridges - 1.02
+	
+network topology choices, linear organization, backbone/tree - 1.04
+	trees have issues with cycles - 1.06
+			*mic out* - 1.07
+			*mic in* - 1.08
+		fixing using spanning tree - 1.09
+		
+	spanning tree algorithm, how to create spanning tree - 1.13
+wvwvwvwvwvwvwvwwvwvwvwvw 1 - 29 thursday wvwvwvwvwvwvwvwwvwvwvwvw
 
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXa
